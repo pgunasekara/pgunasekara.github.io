@@ -1,0 +1,150 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-header {
+    background-image: url("img/funky-lines.png");
+    background-repeat: repeat;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+}
+.section-header .about-outer {
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.section-header .about-outer .avatar {
+    padding: 20px;
+    overflow: auto;
+    align-items: center;
+    border-radius: 50%;
+    content: url("img/me.jpg");
+    width: 10%;
+}
+
+.section-header .about-outer .tagline {
+    font-size: 25pt;
+    margin: 0 0;
+}
+
+.section-header .about-outer .subtitle {
+    font-size: 11pt;
+    margin: 5 0;
+}
+
+.scroll a {
+    position: absolute;
+    width: 50px;
+    bottom: 20px;
+    left: 50%;
+    padding-top: 60px;
+    margin-left: -25px;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #000;
+    font : normal 400 20px/1;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+
+.scroll a:hover {
+    opacity: 0.5;
+}
+
+.scroll a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+.resume-button {
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    background-color: transparent;
+    border: 1px solid #000;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    padding: 10px 10px;
+}
+
+.resume-button:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease-in;
+}
+
+/*ABOUT SECTION*/
+.section-about {
+    margin: 10% 20% 10% 20%;
+    text-align:center;
+}
+
+.fab, .fas {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin-in {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #353434;
+    color: white;
+}
+
+.fa-envelope {
+    background: #00aff0;
+    color: white;
+}
+
+/*PROJECTS SECTION*/
+.section-projects {
+    padding: 5% 20% 10% 20%;
+    background-color: #f2f2f2;
+    text-align:center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+.section-projects img {
+    max-width: 35em;
+    max-height: 20em;
+}
