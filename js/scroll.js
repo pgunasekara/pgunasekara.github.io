@@ -1,7 +1,15 @@
-$(document).ready(function (){
-    $("#click").click(function (){
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
         $('html, body').animate({
-            scrollTop: $("#section-about").offset().top
-        }, 2000);
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
     });
-});
+  });
